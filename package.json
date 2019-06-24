@@ -1,12 +1,13 @@
 {
   "name": "blog-app",
   "version": "0.1.0",
-  "homepage" : "https://hwang1995.github.io/sungwook",
+  "homepage": "https://hwang1995.github.io/sungwook",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
     "cross-env": "^5.2.0",
     "fs-readdir-promise": "^1.0.1",
+    "history": "^4.9.0",
     "markdown-to-jsx": "^6.10.2",
     "query-string": "^6.7.0",
     "react": "^16.8.6",
@@ -23,8 +24,8 @@
     "build": "cross-env NODE_PATH=src react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy" : "npm run build && gh-pages -d build",
-    "push" : "git push origin master"
+    "deploy": "npm run build && gh-pages -d build",
+    "push": "git push origin master"
   },
   "eslintConfig": {
     "extends": "react-app"
