@@ -21,6 +21,8 @@ const Menu = () => {
                         {makeMenuItem("/about", "ABOUT")}
                         {makeMenuItem("/posts", "POSTS")}
                         {makeMenuItem("/posts/science/nature", "POST/SCIENCE")}
+                        {makeMenuItem("/posts/science/nature", "POST/SCIENCE")}
+                        {makeMenuItem("/posts/science/nature", "POST/SCIENCE")}
                     </Nav>
 
                 </Navbar.Collapse>

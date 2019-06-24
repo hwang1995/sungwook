@@ -1,11 +1,11 @@
 import React from 'react'
 import {Redirect} from 'react-router-dom'
-const Posts = ({match}) => {
+const Posts = ({history, match}) => {
     // let url = `/post/${match.params.postID}.md`
     let postID = match.params.postID
     let category = match.params.category
     let postExist = true
-    
+
     if(postID == null || category == null) {
         postExist = false
     }
