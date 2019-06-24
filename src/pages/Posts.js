@@ -5,7 +5,7 @@ const Posts = ({match}) => {
     let postID = match.params.postID
     let category = match.params.category
     let postExist = true
-
+    
     if(postID == null || category == null) {
         postExist = false
     }
