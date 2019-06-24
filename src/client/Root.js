@@ -1,11 +1,17 @@
 import React from 'react'
-import {HashRouter} from 'react-router-dom'
+import {Router} from 'react-router'
+import createHashHistory from 'history/createHash'
 import App from 'shared/App'
 
+const hashHistory = createHashHistory({basename : process.env.PUBLIC_URL})
+
 const Root = () => (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <Router history={hashHistory}>
         <App/>
-    </HashRouter>
+    </Router>
+    // <HashRouter basename={process.env.PUBLIC_URL}>
+    //     <App/>
+    // </HashRouter>
 )
 
 export default Root
